@@ -1,7 +1,7 @@
 const express=require('express');
 const router=express.Router();
 
-const {signup,login} =require('../Controllers/Auth')
+const {signup,login} =require('../controllers/Auth')
 const {auth,isStudent,isTeacher}=require('../Middleware/auth')
 
 // Here we are using three middlewares inn which the first one if for authentication 
