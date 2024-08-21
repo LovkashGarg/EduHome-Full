@@ -67,7 +67,7 @@ const Navbar = ({sendRoletoHome}) => {
     <nav className='grid grid-cols-12 bg-black '>
 <div className='sm:col-span-2  min-h-[60px] text-start text-[30px] px-[40px] py-[20px] text-white flex items-center '>
     <div className="menubutton  block sm:hidden m-[5px] "><img src="https://static.thenounproject.com/png/356889-200.png" alt="" /></div>
-    EduHoMera
+    EduHome
 </div>
 
 <div className='routes hidden sm:col-span-6 min-h-[60px] sm:flex sm:flex-row sm:justify-end  sm:block  text-[24px] text-black mx-[15px] '>
