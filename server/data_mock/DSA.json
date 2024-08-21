@@ -1,0 +1,80 @@
+{
+    "data": [
+      {
+        "question": "What data structure uses LIFO (Last In First Out) principle?",
+        "options": ["Queue", "Stack", "List", "Tree"],
+        "correctAnswer": "Stack"
+      },
+      {
+        "question": "Which sorting algorithm has the worst-case time complexity of O(n^2)?",
+        "options": ["Merge Sort", "Quick Sort", "Bubble Sort", "Heap Sort"],
+        "correctAnswer": "Bubble Sort"
+      },
+      {
+        "question": "What is the time complexity of accessing an element in an array?",
+        "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+        "correctAnswer": "O(1)"
+      },
+      {
+        "question": "Which data structure is used in BFS (Breadth First Search)?",
+        "options": ["Stack", "Queue", "List", "Set"],
+        "correctAnswer": "Queue"
+      },
+      {
+        "question": "What is the space complexity of a binary search tree with n nodes?",
+        "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+        "correctAnswer": "O(n)"
+      },
+      {
+        "question": "Which algorithm is used for finding the shortest path in a graph?",
+        "options": ["Dijkstra's Algorithm", "Bubble Sort", "Merge Sort", "Depth First Search"],
+        "correctAnswer": "Dijkstra's Algorithm"
+      },
+      {
+        "question": "What is the time complexity of inserting an element into a hash table?",
+        "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+        "correctAnswer": "O(1)"
+      },
+      {
+        "question": "Which data structure uses a dynamic array implementation?",
+        "options": ["Array List", "Linked List", "Stack", "Queue"],
+        "correctAnswer": "Array List"
+      },
+      {
+        "question": "What is the worst-case time complexity of insertion sort?",
+        "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+        "correctAnswer": "O(n^2)"
+      },
+      {
+        "question": "Which traversal method is used in a binary tree to visit nodes in order?",
+        "options": ["Pre-order", "In-order", "Post-order", "Level-order"],
+        "correctAnswer": "In-order"
+      },
+      {
+        "question": "What is the time complexity of searching in a balanced binary search tree?",
+        "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+        "correctAnswer": "O(log n)"
+      },
+      {
+        "question": "Which algorithm is used for finding the minimum spanning tree in a graph?",
+        "options": ["Kruskal's Algorithm", "Dijkstra's Algorithm", "Bellman-Ford Algorithm", "Floyd-Warshall Algorithm"],
+        "correctAnswer": "Kruskal's Algorithm"
+      },
+      {
+        "question": "Which data structure is best suited for implementing a priority queue?",
+        "options": ["Heap", "Queue", "Stack", "Linked List"],
+        "correctAnswer": "Heap"
+      },
+      {
+        "question": "What is the primary operation of a queue?",
+        "options": ["Insertion at front", "Deletion from front", "Insertion at end", "Deletion from end"],
+        "correctAnswer": "Deletion from front"
+      },
+      {
+        "question": "Which algorithm is known for its divide-and-conquer strategy?",
+        "options": ["Merge Sort", "Insertion Sort", "Bubble Sort", "Selection Sort"],
+        "correctAnswer": "Merge Sort"
+      }
+    ]
+  }
+  

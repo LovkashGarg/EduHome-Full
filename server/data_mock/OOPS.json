@@ -1,0 +1,80 @@
+{
+    "data": [
+      {
+        "question": "What principle of OOP ensures that data and methods are bundled together?",
+        "options": ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
+        "correctAnswer": "Encapsulation"
+      },
+      {
+        "question": "What is inheritance in OOP?",
+        "options": ["A mechanism for creating new classes from existing ones", "A way to define methods", "A method to hide data", "A technique to handle multiple types"],
+        "correctAnswer": "A mechanism for creating new classes from existing ones"
+      },
+      {
+        "question": "Which OOP principle allows objects to be treated as instances of their parent class?",
+        "options": ["Polymorphism", "Inheritance", "Abstraction", "Encapsulation"],
+        "correctAnswer": "Polymorphism"
+      },
+      {
+        "question": "What is the purpose of abstraction in OOP?",
+        "options": ["To hide complex implementation details", "To create new classes", "To manage data", "To handle multiple types"],
+        "correctAnswer": "To hide complex implementation details"
+      },
+      {
+        "question": "In OOP, what is a constructor?",
+        "options": ["A method that initializes objects", "A function that handles exceptions", "A way to define methods", "A technique to inherit classes"],
+        "correctAnswer": "A method that initializes objects"
+      },
+      {
+        "question": "What does polymorphism mean in OOP?",
+        "options": ["The ability of different objects to be accessed through the same interface", "The concept of creating classes from existing ones", "The process of hiding data", "The ability to define methods with the same name but different parameters"],
+        "correctAnswer": "The ability of different objects to be accessed through the same interface"
+      },
+      {
+        "question": "What is method overriding in OOP?",
+        "options": ["Redefining a method in a subclass that was already defined in the parent class", "Creating new methods", "Hiding methods from other classes", "Combining methods into a single method"],
+        "correctAnswer": "Redefining a method in a subclass that was already defined in the parent class"
+      },
+      {
+        "question": "What is encapsulation in OOP?",
+        "options": ["Bundling data and methods that operate on the data", "Creating new classes from existing ones", "Handling multiple types", "Hiding implementation details"],
+        "correctAnswer": "Bundling data and methods that operate on the data"
+      },
+      {
+        "question": "Which of the following is an example of a polymorphic behavior in OOP?",
+        "options": ["Method overloading", "Method overriding", "Inheritance", "Encapsulation"],
+        "correctAnswer": "Method overriding"
+      },
+      {
+        "question": "What is an abstract class in OOP?",
+        "options": ["A class that cannot be instantiated and may contain abstract methods", "A class that manages data", "A class that defines methods", "A class that inherits from another class"],
+        "correctAnswer": "A class that cannot be instantiated and may contain abstract methods"
+      },
+      {
+        "question": "What does a getter method do in OOP?",
+        "options": ["Provides read access to private attributes", "Sets values of attributes", "Deletes attributes", "Changes class definitions"],
+        "correctAnswer": "Provides read access to private attributes"
+      },
+      {
+        "question": "What is the purpose of an interface in OOP?",
+        "options": ["To define a contract that implementing classes must follow", "To create new methods", "To encapsulate data", "To handle exceptions"],
+        "correctAnswer": "To define a contract that implementing classes must follow"
+      },
+      {
+        "question": "Which OOP principle is used to describe the concept of 'real-world entities' in code?",
+        "options": ["Abstraction", "Encapsulation", "Inheritance", "Polymorphism"],
+        "correctAnswer": "Abstraction"
+      },
+      {
+        "question": "What is a class in OOP?",
+        "options": ["A blueprint for creating objects", "An instance of an object", "A method for data processing", "A function for handling errors"],
+        "correctAnswer": "A blueprint for creating objects"
+      },
+      {
+        "question": "What is the difference between a class and an object in OOP?",
+        "options": ["A class is a blueprint, and an object is an instance of a class", "A class is a method, and an object is a function", "A class handles data, and an object handles methods", "A class is an interface, and an object is a method"],
+        "correctAnswer": "A class is a blueprint, and an object is an instance of a class"
+      }
+    ]
+  }
+  

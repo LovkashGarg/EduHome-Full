@@ -1,0 +1,80 @@
+{
+    "data": [
+      {
+        "question": "What is the main purpose of a load balancer?",
+        "options": ["Increase redundancy", "Distribute traffic across servers", "Store user data", "Cache responses"],
+        "correctAnswer": "Distribute traffic across servers"
+      },
+      {
+        "question": "Which database model is best suited for handling hierarchical data?",
+        "options": ["Relational", "NoSQL", "Document", "Graph"],
+        "correctAnswer": "Document"
+      },
+      {
+        "question": "What is the primary function of a CDN (Content Delivery Network)?",
+        "options": ["Encrypt data", "Serve content from multiple locations", "Back up data", "Monitor network traffic"],
+        "correctAnswer": "Serve content from multiple locations"
+      },
+      {
+        "question": "What is the CAP theorem?",
+        "options": ["Consistency, Availability, Partition tolerance", "Consistency, Access, Performance", "Capacity, Availability, Performance", "Consistency, Accuracy, Partition tolerance"],
+        "correctAnswer": "Consistency, Availability, Partition tolerance"
+      },
+      {
+        "question": "In a microservices architecture, how is communication typically handled between services?",
+        "options": ["Shared database", "HTTP/REST or gRPC", "Direct method calls", "Message queues"],
+        "correctAnswer": "HTTP/REST or gRPC"
+      },
+      {
+        "question": "What does an API Gateway do in a microservices architecture?",
+        "options": ["Route requests to appropriate services", "Manage data storage", "Authenticate users", "Encrypt data"],
+        "correctAnswer": "Route requests to appropriate services"
+      },
+      {
+        "question": "What is sharding in database systems?",
+        "options": ["Partitioning data across multiple servers", "Indexing data", "Caching frequently accessed data", "Encrypting data"],
+        "correctAnswer": "Partitioning data across multiple servers"
+      },
+      {
+        "question": "Which protocol is commonly used for secure communication over the internet?",
+        "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
+        "correctAnswer": "HTTPS"
+      },
+      {
+        "question": "What is a distributed system?",
+        "options": ["A single server with high capacity", "Multiple servers working as a single system", "A system with high redundancy", "A system that only uses cloud services"],
+        "correctAnswer": "Multiple servers working as a single system"
+      },
+      {
+        "question": "What is the purpose of caching in system design?",
+        "options": ["To increase data redundancy", "To reduce latency and improve performance", "To encrypt data", "To manage user sessions"],
+        "correctAnswer": "To reduce latency and improve performance"
+      },
+      {
+        "question": "What does the term 'scalability' refer to in system design?",
+        "options": ["The ability to handle increasing load by adding resources", "The ability to recover from failures", "The ability to protect against attacks", "The ability to encrypt data"],
+        "correctAnswer": "The ability to handle increasing load by adding resources"
+      },
+      {
+        "question": "What is a 'replica set' in database systems?",
+        "options": ["A set of database instances for high availability", "A set of data partitions", "A set of user permissions", "A set of database backups"],
+        "correctAnswer": "A set of database instances for high availability"
+      },
+      {
+        "question": "What is 'eventual consistency' in distributed systems?",
+        "options": ["All nodes eventually converge to the same state", "Immediate consistency across all nodes", "Consistency only during peak times", "Consistency only for critical operations"],
+        "correctAnswer": "All nodes eventually converge to the same state"
+      },
+      {
+        "question": "What is the purpose of a 'message queue' in system design?",
+        "options": ["To enable asynchronous communication between services", "To store data temporarily", "To authenticate users", "To manage server resources"],
+        "correctAnswer": "To enable asynchronous communication between services"
+      },
+      {
+        "question": "What is a 'service mesh' in microservices architecture?",
+        "options": ["A dedicated infrastructure layer for managing service-to-service communication", "A layer for data storage", "A layer for user authentication", "A layer for load balancing"],
+        "correctAnswer": "A dedicated infrastructure layer for managing service-to-service communication"
+      }
+    ]
+  }
+  

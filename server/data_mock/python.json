@@ -1,0 +1,80 @@
+{
+    "data": [
+      {
+        "question": "What is the output of `print(2 ** 3)` in Python?",
+        "options": ["5", "6", "8", "9"],
+        "correctAnswer": "8"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["function", "def", "func", "define"],
+        "correctAnswer": "def"
+      },
+      {
+        "question": "How do you create a list in Python?",
+        "options": ["list()", "[]", "{}", "list([])"],
+        "correctAnswer": "[]"
+      },
+      {
+        "question": "Which operator is used for string concatenation in Python?",
+        "options": ["+", "-", "*", "/"],
+        "correctAnswer": "+"
+      },
+      {
+        "question": "What is the output of `len(\"Hello\")`?",
+        "options": ["4", "5", "6", "7"],
+        "correctAnswer": "5"
+      },
+      {
+        "question": "How do you comment a single line in Python?",
+        "options": ["//", "/* */", "#", "<!-- -->"],
+        "correctAnswer": "#"
+      },
+      {
+        "question": "What is the result of `3 // 2`?",
+        "options": ["1", "1.5", "2", "3"],
+        "correctAnswer": "1"
+      },
+      {
+        "question": "What is the output of `[1, 2] + [3, 4]`?",
+        "options": ["[1, 2, 3, 4]", "[4, 3, 2, 1]", "[1, 2, [3, 4]]", "[1, 2, 3, 4]"],
+        "correctAnswer": "[1, 2, 3, 4]"
+      },
+      {
+        "question": "Which function is used to get the type of an object in Python?",
+        "options": ["type()", "typeof()", "object()", "get_type()"],
+        "correctAnswer": "type()"
+      },
+      {
+        "question": "What is the output of \"a\" in \"apple\"?",
+        "options": ["True", "False", "None", "Error"],
+        "correctAnswer": "True"
+      },
+      {
+        "question": "Which module in Python provides mathematical functions?",
+        "options": ["math", "maths", "numeric", "calc"],
+        "correctAnswer": "math"
+      },
+      {
+        "question": "How do you handle exceptions in Python?",
+        "options": ["try...except", "catch...finally", "handle...error", "try...catch"],
+        "correctAnswer": "try...except"
+      },
+      {
+        "question": "What is the default value of the `end` parameter in the `print()` function?",
+        "options": ["' '", "'\n'", "'\t'", "'\r'"],
+        "correctAnswer": "'\n'"
+      },
+      {
+        "question": "How do you open a file in Python?",
+        "options": ["open()", "file()", "read()", "write()"],
+        "correctAnswer": "open()"
+      },
+      {
+        "question": "What is the output of `bool([])`?",
+        "options": ["True", "False", "None", "Error"],
+        "correctAnswer": "False"
+      }
+    ]
+  }
+  
