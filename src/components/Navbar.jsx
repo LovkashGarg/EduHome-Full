@@ -34,7 +34,7 @@ const Navbar = ({sendRoletoHome}) => {
         }
     });
      if(response.status ==200){
-      console.log("Successfully fetched details", response.data);
+      // console.log("Successfully fetched details", response.data);
       console.log(response.data);
       const jsonresponse=await response.data;
       // console.log(jsonresponse);
@@ -78,7 +78,7 @@ const Navbar = ({sendRoletoHome}) => {
     :null
       }
 
-        {Role=='Student'? <div className='m-[20px] ml-[10px] text-white px-[10px]  hover:bg-gray-400 rounded-[20px] '><Link to='/SearchResults'>Search </Link></div> : Role==='Teacher' ? <div className='my-[20px] mx-[10px] hover:bg-gray-400 rounded-[20px] px-[5px]'><Link to={`/CourseCreationForm/${Email}`}>Create Course</Link></div> :null}
+        {Role=='Student'? <div className='m-[20px] ml-[10px] text-white px-[10px]  hover:bg-gray-400 rounded-[20px] '><Link to='/SearchResults'>Search </Link></div> : Role==='Teacher' ? <div className='my-[20px] text-white mx-[10px] hover:bg-gray-400 rounded-[20px] px-[5px]'><Link to={`/CourseCreationForm/${Email}`}>Create Course</Link></div> :null}
     <div className='m-[20px] mx-[10px] px-[10px] hover:bg-gray-400 text-white rounded-[20px]  '><Link to='/profile '> Profile </Link></div>
 </div>
 <div className='sm:col-span-2 min-h-[60px] hidden  sm:block sm:flex  sm:items-center sm:justify-center mr-[10px] '>

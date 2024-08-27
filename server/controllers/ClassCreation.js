@@ -33,7 +33,7 @@ const createclass=await Classes.create({
     classTeacher,classTitle,classTime,classType,classCategory,
     thumbnail:thumbnailImageurl.secure_url
 })
-console.log(createclass);
+// console.log(createclass);
     return res.status(200).json({
       success: true,
       data: `Class created By ${classTeacher}`,

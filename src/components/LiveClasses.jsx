@@ -16,9 +16,9 @@ handleallclassesdata();
        
       const jsondata=await allliveclass.json();
       setData(jsondata.data);
-      console.log("data from backend\n\n" + jsondata.data + "\n\n\n");
-      console.log(jsondata.data);
-      console.log("Hello " + data2);
+      // console.log("data from backend\n\n" + jsondata.data + "\n\n\n");
+      // console.log(jsondata.data);
+      // console.log("Hello " + data2);
     }
 catch(err){
   console.error(err);

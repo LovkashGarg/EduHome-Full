@@ -18,19 +18,19 @@ const TopCourses = ({ sendDataToparent }) => {
       const alltopcoursesResponse = await fetch(
         "http://localhost:5000/api/v1/course/alltopcourses"
       );
-      const jsondata = await alltopcoursesResponse.json();
-       console.log(jsondata)
-      setCourses(jsondata.allCourses);
-      Courses.forEach((course) => {
-        console.log("Course ID:", course._id);
-        console.log("Course Name:", course.courseName);
-        console.log("Course Description:", course.courseDescription);
-        console.log("Instructor Name:", course.Instructor.name);
-        console.log("Price:", course.price);
-        console.log("Students Enrolled:", course.studentsEnrolled);
-        console.log("Thumbnail URL:", course.thumbnail);
-      });
-      console.log(Courses);
+      // const jsondata = await alltopcoursesResponse.json();
+      //  console.log(jsondata)
+      // setCourses(jsondata.allCourses);
+      // Courses.forEach((course) => {
+      //   console.log("Course ID:", course._id);
+      //   console.log("Course Name:", course.courseName);
+      //   console.log("Course Description:", course.courseDescription);
+      //   console.log("Instructor Name:", course.Instructor.name);
+      //   console.log("Price:", course.price);
+      //   console.log("Students Enrolled:", course.studentsEnrolled);
+      //   console.log("Thumbnail URL:", course.thumbnail);
+      // });
+      // console.log(Courses);
     } catch (err) {
       console.error(err);
       console.log(err);
@@ -44,7 +44,7 @@ const TopCourses = ({ sendDataToparent }) => {
     return (
       <>
         <div className="w-[250px] h-[350px] sm:w-[300px] sm:h-[350px]  mx-[50px] border-[3px] rounded-[30px] border-green-500 flex flex-col flex flex-col items-center justify-center ">
-          <div className="teacher">{props.InstructorName}</div>
+          <div className="teacher">Sandeep Sharma</div>
           <div className="thumbnailsection flex justify-center items-center">
             <img
               src={props.image}
@@ -54,14 +54,15 @@ const TopCourses = ({ sendDataToparent }) => {
           </div>
           <div className="flex  my-[10px] gap-5">
             <div className="bg-red-600 text-white text-[20px]  rounded-[20px] w-[150px] text-center ">
-              {props.courseName}
+              {/* {props.courseName} */}
             </div>
             <p className="text-white text-[20px] bg-green-700 rounded-[10px] px-[10px] ">
-              ₹{props.price}
+              {/* ₹{props.price} */}
             </p>
           </div>
           <div className="Livestudents">
-            Enrolled By : {props.enrolledstudents} Students
+          {/* {props.enrolledstudents} */}
+            Enrolled By :  Students
           </div>
           <button
             className="bg-green-600 text-white w-[140px] h-[30px] rounded-[40px]"
@@ -70,7 +71,7 @@ const TopCourses = ({ sendDataToparent }) => {
               sendDataToParentHandler();
             }}
           >
-           <Link to={`/Course/${props.courseName}/${props.idpassed}`}>Watch Course</Link>
+           {/* <Link to={`/Course/${props.courseName}/${props.idpassed}`}>Watch Course</Link> */}
           </button>
         </div>
       </>

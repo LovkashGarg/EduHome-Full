@@ -21,7 +21,7 @@ const CourseSchema = new mongoose.Schema({
   price: {
     type: Number,
   },
-  Category: {
+  category: {
     // type: mongoose.Schema.Types.ObjectId,
     type:String
     // ref:"CourseCategory",

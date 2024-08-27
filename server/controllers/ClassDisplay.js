@@ -7,7 +7,7 @@ const ClassDisplay=async(req,res)=>{
     const allliveclasses = await Classes.find({})
       .sort({ classTime: 1 }) // Sort by classTime in ascending order
       .limit(4); // Limit the result to 4 documents
-      console.log(allliveclasses);
+      // console.log(allliveclasses);
     res.json({
         // success:true,
    data: allliveclasses

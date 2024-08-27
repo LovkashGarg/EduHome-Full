@@ -8,41 +8,46 @@ const  uploadImage = require("../Utils/imageUploader");
 exports.createCourse = async (req, res) => {
   try {
     // We want to do instructor validation
-    const { courseName, courseDescription, price, Category ,userId,textContent} =req.body;
-
+   
+    const { courseName,category, price,HoursofContent, paidOrFree ,textContent} =req.body;
+    // if(!price){
+    //   paidOrFree:"Free";
+    // }
     // get thumbnail
-    const thumbnail = req.files.image;
-    console.log(req.files.image);
+    // const thumbnail = req.files.image;
+    // console.log(req.files.image);
     // console.log(req.file);
   // console.log(thumbnail);
     // Validation
-    console.log(req.body);
-    if (
-      !courseName ||
-      !courseDescription ||
-      !price ||
-      !Category ||
-      !thumbnail|| 
-       !textContent
-    ) {
-      return res.status(400).json({
-        success: false,
-        message: "All Fields are required",
-      });
-    }
+    console.log(" Here data came " ,req.body);
+    // if (
+    //   // !thumbnail|| 
+    //   // !paidOrFree ||
+    //   !courseName ||
+    //   !price ||
+    //   !category ||
+    //   !HoursofContent||
+    //   !textContent
+    // ) {
+    //   console.log("data not complete");
+    //   return res.status(400).json({
+    //     success: false,
+    //     message: "All Fields are required",
+    //   });
+    // }
 
     // check for instructor
     // const userId = req.user.id;
-    const instructorDetails = await User.findOne({ _id:userId });
+    // const instructorDetails = await User.findOne({ _id:userId });
 
-    console.log("Instructor Details " + instructorDetails);
+    // console.log("Instructor Details " + instructorDetails);
 
-    if (!instructorDetails) {
-      return res.status(404).json({
-        success: false,
-        message: "Instructor Details not Found",
-      });
-    }
+    // if (!instructorDetails) {
+    //   return res.status(404).json({
+    //     success: false,
+    //     message: "Instructor Details not Found",
+    //   });
+    // }
 
     // check given tag is valid or not we can do just by dropdown menu
 
@@ -56,35 +61,36 @@ exports.createCourse = async (req, res) => {
 
     // Now uploading the image to cloudinary
 
-    const thumbnailImageurl = await uploadImage(
-      thumbnail.tempFilePath,
-      process.env.FOLDER_NAME
-    );
+    // const thumbnailImageurl = await uploadImage(
+    //   thumbnail.tempFilePath,
+    //   process.env.FOLDER_NAME
+    // );
 
     // create a Entry for new Course
     const newCourse = await Course.create({
       courseName,
-      courseDescription,
-      Instructor: instructorDetails._id,
-      whatYouWillLearn: whatYouWillLearn,
-      Category: Category,
+      category,
+      // Instructor: instructorDetails._id,
+      // whatYouWillLearn: whatYouWillLearn,
       textContent:textContent,
+      HoursofContent,
+      paidOrFree,
       price,
-      thumbnail: thumbnailImageurl.secure_url,
+      // thumbnail: thumbnailImageurl.secure_url,
     });
     console.log(newCourse);
 
     // add the new Courser to the user Schema of Instructor
     // Here is the use of Ref function
-   const newUser= await User.findByIdAndUpdate(
-      { _id:instructorDetails._id },
-      {
-        $push: {
-          courses: newCourse._id,
-        },
-      },
-      { new: true } // to get a updated response
-    );
+  //  const newUser= await User.findByIdAndUpdate(
+  //     { _id:instructorDetails._id },
+  //     {
+  //       $push: {
+  //         courses: newCourse._id,
+  //       },
+  //     },
+  //     { new: true } // to get a updated response
+  //   );
 
     // udate the Tag ka scheme
     // HW
@@ -92,7 +98,7 @@ exports.createCourse = async (req, res) => {
     return res.status(200).json({
       success: true,
       message:"Course Created Succesfully",
-      data:newCourse
+      data:"Helo very good"
     });
   } catch (err) {
     console.error(err);
