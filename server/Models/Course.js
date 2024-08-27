@@ -4,20 +4,21 @@ const CourseSchema = new mongoose.Schema({
     courseName: {
         type: String,
       },
-  courseDescription: {
-    type: String,
-  },
-  Instructor: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref:"User",
-    // required:true,
-  },
+  // courseDescription: {
+  //   type: String,
+  // },
+  
   textContent:{
-    type:String
+    type:String,
   },
-  ratingAndReviews:{
-    type:mongoose.Schema.Types.ObjectId
-  },
+  // Instructor: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   ref:"User",
+  //   // required:true,
+  // },
+  // ratingAndReviews:{
+  //   type:mongoose.Schema.Types.ObjectId
+  // },
   price: {
     type: Number,
   },
@@ -26,22 +27,22 @@ const CourseSchema = new mongoose.Schema({
     type:String
     // ref:"CourseCategory",
   },
-  studentsEnrolled:{
-    // type:mongoose.Schema.Types.ObjectId,
-    type:String,
-    default:0,
-    // required:true,
-    ref:"User"
-  },
+  // studentsEnrolled:{
+  //   // type:mongoose.Schema.Types.ObjectId,
+  //   type:String,
+  //   default:0,
+  //   // required:true,
+  //   ref:"User"
+  // },
   HoursofContent:{
     type:Number
   },
   paidorFree:{
     type:String,
   },
-  thumbnail:{
-    type:String
-  }
+  // thumbnail:{
+  //   type:String
+  // }
 });
 
-module.exports = new mongoose.model("Courses", CourseSchema);
+module.exports = new mongoose.model("Courses_Database", CourseSchema);

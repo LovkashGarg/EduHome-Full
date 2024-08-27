@@ -10,6 +10,8 @@ exports.createCourse = async (req, res) => {
     // We want to do instructor validation
    
     const { courseName,category, price,HoursofContent, paidOrFree ,textContent} =req.body;
+    
+    const stringifiedTextContent = typeof textContent === 'string' ? textContent : JSON.stringify(textContent);
     // if(!price){
     //   paidOrFree:"Free";
     // }
@@ -19,6 +21,7 @@ exports.createCourse = async (req, res) => {
     // console.log(req.file);
   // console.log(thumbnail);
     // Validation
+     console.log(stringifiedTextContent)
     console.log(" Here data came " ,req.body);
     // if (
     //   // !thumbnail|| 
@@ -72,9 +75,9 @@ exports.createCourse = async (req, res) => {
       category,
       // Instructor: instructorDetails._id,
       // whatYouWillLearn: whatYouWillLearn,
-      textContent:textContent,
+      textContent:stringifiedTextContent,
       HoursofContent,
-      paidOrFree,
+      // paidOrFree,
       price,
       // thumbnail: thumbnailImageurl.secure_url,
     });
@@ -114,15 +117,16 @@ exports.showAllCourses=async(req,res)=>{
     try{
 const allCourses=await Course.find({},{
     courseName:true,
-    courseDescription:true,
+    textContent:true,
     price:true,
-    Instructor:true,
-    studentsEnrolled:true,
+    // Instructor:true,
+    HoursofContent:true,
+    // studentsEnrolled:true,
     ratingAndReviews:true,
     thumbnail:true,
 })
-.populate("Instructor") // matlab Instructor field me Instructor ki detail aajayegi
-.exec();
+// .populate("Instructor") // matlab Instructor field me Instructor ki detail aajayegi
+// .exec();
 
 // means that the following fields must be present
 res.json({
