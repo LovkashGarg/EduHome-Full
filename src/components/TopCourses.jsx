@@ -43,7 +43,7 @@ const TopCourses = ({ sendDataToparent }) => {
 
     return (
       <>
-        <div className="w-[250px] h-[350px] sm:w-[300px] sm:h-[350px]  mx-[50px] border-[3px] rounded-[30px] border-green-500 flex flex-col flex flex-col items-center justify-center ">
+        <div className="w-[250px] h-[350px] sm:w-[300px] sm:h-[350px]  mx-[50px] border-[3px] rounded-[30px] border-green-500 flex flex-col flex flex-col items-center justify-center   ">
           <div className="teacher">Sandeep Sharma</div>
           <div className="thumbnailsection flex justify-center items-center">
             <img
@@ -79,7 +79,7 @@ const TopCourses = ({ sendDataToparent }) => {
   };
   return (
     <>
-      <div className=" bg-yellow-500 rounded-[20px] w-[230px] ml-[100px] mb-[30px] text-[25px] px-[3%]">
+      <div className=" h-[50px] bg-yellow-500 rounded-[20px] w-[290px] ml-[100px] mb-[30px] text-[30px] px-[3%]  ">
         Top Courses
       </div>
 

@@ -33,11 +33,11 @@ catch(err){
     // console.log("Hello "+ allliveclasses);
     return (
       <>
-        <div className=" text-white w-[580px] h-[220px] sm:w-[400px] sm:h-[320px] mx-[20px] border-[3px] rounded-[30px] border-green-500 flex flex-col items-center justify-center ">
+        <div className=" text-white w-[580px] h-[260px] sm:w-[420px] sm:h-[350px] mx-[20px] border-[3px] rounded-[30px] border-green-500 flex flex-col items-center justify-center  ">
   
-         <div className='flex flex-row items-center justify-between gap-[20px]'>
-          <div className="bg-red-600 text-white w-[150px] rounded-[20px] text-center">{props.classTeacher}</div>
-          <div className="bg-red-600 text-white w-[100px] rounded-[20px] text-center">{props.timepassed}</div>
+         <div className='flex flex-row items-center justify-between gap-[20px] pt-[20px]'>
+          <div className="bg-red-600 text-[25px] text-white w-[200px] rounded-[20px] text-center">{props.classTeacher}</div>
+          <div className="bg-red-600 text-[25px] text-white w-[140px] rounded-[20px] text-center">{props.timepassed}</div>
           </div>
           <div className="thumbnailsection flex justify-center items-center">
             <img
@@ -46,16 +46,16 @@ catch(err){
               className="rounded-[20px] my-[20px] w-[150px] h-[130px] sm:w-[210px] sm:h-[130px] "
             />
           </div>
-          <div className="teacher">{props.classTitle} </div>
-          <div className="Livestudents">Students Watching {livestudents}</div>
-          <button  className='bg-green-600 text-white w-[100px] h-[30px] rounded-[40px]' ><Link to={`/Room/${props.classTeacher}/${props.idpassed}`}>Watch Now</Link></button>
+          <div className="teacher text-[25px]">{props.classTitle} </div>
+          <div className="Livestudents text-[20px]">Students Watching {livestudents}</div>
+          <button  className='bg-green-600 text-white w-[200px] h-[50px] text-[30px] rounded-[40px] mb-[20px] ' ><Link to={`/Room/${props.classTeacher}/${props.idpassed}`}>Watch Now</Link></button>
         </div>
       </>
     );
   };
   return (
     <>
-      <div className="bg-green-500 rounded-[20px] w-[240px] ml-[100px] mb-[30px] text-[25px] px-[2%]">Live Classes </div>
+      <div className="bg-green-500 rounded-[20px] h-[50px] w-[240px] ml-[100px] mb-[30px] text-[30px] px-[2%]">Live Classes </div>
       <div className="liveclassescarousel w-[100vw] h-[300px] grid grid-cols-1 gap-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
   {data2.map(item =>(
     <Liveclasscard key={item._id} image={item.thumbnail} timepassed={item.classTime} idpassed={item._id} className='col-span-1' classTeacher={item.classTeacher} classTitle={item.classTitle} />

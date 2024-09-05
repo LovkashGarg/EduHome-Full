@@ -24,7 +24,7 @@ const Room = () => {
     const hgsl52 = +process.env.REACT_APP_hgsl52;
     const server_ghs30 = process.env.REACT_APP_server_ghs30;
 
-    
+
     const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
       hgsl52,
       server_ghs30,
@@ -173,16 +173,16 @@ const Room = () => {
             </ul>
           </div>
         </div>
-        <div className="live-video col-span-6 bg-white  border-[3px] border-green-400 m-[20px] flex justify-center items-center  h-[90vh]">
+        <div className="live-video col-span-10 bg-white  border-[3px] border-green-400 m-[20px] flex justify-center items-center  h-[90vh]">
           <div
             className="myCallContainer"
             ref={myMeeting}
-            style={{ width: "50vw", height: "50vh" }}
+            style={{ width: "80%", height: "80%" }}
           ></div>
         </div>
-        <div className="Chat_section col-span-4 bg-orange  border-[3px] border-green-400 m-[20px] flex justify-center items-center  h-[90vh]">
+        {/* <div className="Chat_section col-span-4 bg-orange  border-[3px] border-green-400 m-[20px] flex justify-center items-center  h-[90vh]">
           <Chat />
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -91,8 +91,8 @@ const Home = () => {
             <div className="bigtagline text-[40px] px-[20px] md:text-[45px] text-red-800 font-mono">
               Learn with Us
             </div>
-            <div className="Description text-[15px] sm:text-[20px] text-black ">
-              EduHoMera is a Edtech Platform which comes with a
+            <div className="Description text-[15px] sm:text-[30px] text-black ">
+              EduHome is a Edtech Platform which comes with a
               <br /> mission of briging quality Education to Homes.
             </div>
             <div className="buttons my-[15px] flex justify-between">
@@ -105,11 +105,11 @@ const Home = () => {
             </div>
           </div>
           <div className="right row-span-1 h-[30vh] lg:col-span-1">
-            <img src={Student} alt="" className="sm:hidden sm:hidden md:block rounded-[50px]  "  />
+            <img src={Student} alt="" className="mt-[50px] sm:hidden sm:hidden md:block rounded-[50px]  "  />
           </div>
         </div>
         <LiveClasses className={role === "Teacher" ? "hidden" : "block"} />
-        <div className="my-[50px] ">
+        <div className="mt-[100px]  mb-[50px] ">
         <TopCourses sendDataToparent={HandledatafromChild} />
         </div>
         <div className="my-[20px]"></div>
@@ -148,8 +148,9 @@ const Home = () => {
                 sequence={[codeblock, 1000, ""]}
                 repeat={Infinity}
                 speed={50}
-                style={{ textfontSize: "1em", display: "inline-block" }}
+                // style={{  display: "inline-block" }}
                 omitDeletionAnimation={true}
+                className="text-[30px]"
               />
             </div>
           </div>
