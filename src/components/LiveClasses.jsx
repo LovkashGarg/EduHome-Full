@@ -33,8 +33,8 @@ catch(err){
     // console.log("Hello "+ allliveclasses);
     return (
       <>
-        <div className=" text-white w-[280px] h-[220px] sm:w-[300px] sm:h-[320px] mx-[30px] border-[3px] rounded-[30px] border-green-500 flex flex-col items-center justify-center ">
-         
+        <div className=" text-white w-[580px] h-[220px] sm:w-[400px] sm:h-[320px] mx-[20px] border-[3px] rounded-[30px] border-green-500 flex flex-col items-center justify-center ">
+  
          <div className='flex flex-row items-center justify-between gap-[20px]'>
           <div className="bg-red-600 text-white w-[150px] rounded-[20px] text-center">{props.classTeacher}</div>
           <div className="bg-red-600 text-white w-[100px] rounded-[20px] text-center">{props.timepassed}</div>
@@ -55,9 +55,7 @@ catch(err){
   };
   return (
     <>
-      <div className="bg-green-500 rounded-[20px] w-[230px] ml-[100px] mb-[30px] text-[25px] px-[3%]">
-        Live Classes
-      </div>
+      <div className="bg-green-500 rounded-[20px] w-[240px] ml-[100px] mb-[30px] text-[25px] px-[2%]">Live Classes </div>
       <div className="liveclassescarousel w-[100vw] h-[300px] grid grid-cols-1 gap-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
   {data2.map(item =>(
     <Liveclasscard key={item._id} image={item.thumbnail} timepassed={item.classTime} idpassed={item._id} className='col-span-1' classTeacher={item.classTeacher} classTitle={item.classTitle} />
