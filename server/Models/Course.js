@@ -7,7 +7,9 @@ const CourseSchema = new mongoose.Schema({
   // courseDescription: {
   //   type: String,
   // },
-  
+  dateCreated:{
+    type: Date,
+  },
   textContent:{
     type:String,
   },

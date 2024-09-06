@@ -37,6 +37,31 @@ app.use('/api/v1/classes',classRoutes);
 app.use('/api/v1/Search',SearchRoutes);
 
 
+const Razorpay = require('razorpay');
+
+// Create an instance of Razorpay
+const razorpayInstance = new Razorpay({
+  key_id: process.env.RAZORPAY_KEY_ID,       // Replace with your Razorpay Key ID
+  key_secret:process.env.RAZORPAY_SECRET, // Replace with your Razorpay Key Secret
+});
+// Create a Razorpay order (on some route, e.g., /create-order)
+app.post('/create-order', async (req, res) => {
+  const options = {
+    amount: 99900,  // Amount in paise (e.g., 50000 paise = INR 500)
+    currency: "INR",
+    receipt: "order_rcptid_11",
+  };
+
+  try {
+    const order = await razorpayInstance.orders.create(options);
+    res.json(order); // Send order details to frontend
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error creating order');
+  }
+});
+
+
 app.get('/Generate/:questiontype',(req,res)=>{
 const questiontype=req.params.questiontype;
 console.log((questiontype));

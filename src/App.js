@@ -14,6 +14,8 @@ import CourseCreationForm from './components/CourseCreationForm';
 import Course_showing_cpm from './components/Course_showing_cpm';
 import McqQuestion from './components/MockTest/Mock_test_question_component';
 import Mock_test_topic from './components/MockTest/Mock_test_topic';
+// import PaymentProcessing from './components/PaymentProcessing';
+
 function App() {
   return (
     <UserProvider>
@@ -30,6 +32,7 @@ function App() {
 <Route path='/Course/:courseName/:id' element={<Course_showing_cpm/>} />
 <Route path='/GenerateMockTests' element={<Mock_test_topic/>} />
 <Route path='GenerateMockTests/MockTest/:id' element={<McqQuestion/>} />
+{/* <Route path='/paymentprocessing' element={<PaymentProcessing/>} /> */}
     </Routes>
     </UserProvider>
   );

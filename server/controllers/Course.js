@@ -75,9 +75,10 @@ exports.createCourse = async (req, res) => {
       category,
       // Instructor: instructorDetails._id,
       // whatYouWillLearn: whatYouWillLearn,
+      dateCreated:Date.now(),
       textContent:stringifiedTextContent,
       HoursofContent,
-      // paidOrFree,
+      paidOrFree,
       price,
       // thumbnail: thumbnailImageurl.secure_url,
     });

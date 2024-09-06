@@ -72,7 +72,7 @@ const Navbar = ({sendRoletoHome}) => {
 
 <div className='routes hidden sm:col-span-6 min-h-[60px] sm:flex sm:flex-row sm:justify-end  sm:block  text-[24px] text-black mx-[15px] '>
     <div className='m-[20px] text-white hover:bg-gray-400 mx-[7px] px-[10px] rounded-[20px]'><Link to='/'>Home</Link></div>
-     {Role=='Student'? <button className='m-[20px] mx-[10px] text-white px-[10px] hover:bg-gray-400 rounded-[20px] pb-[5px]'><Link to='/Cart'>Cart</Link></button> : Role==='Teacher' ? <div className='m-[20px] text-white hover:bg-gray-400 rounded-[20px] px-[5px] mx-[10px] '><Link to='/TeacherDashboard'>DashBoard</Link></div> :null}
+     {Role=='Student'? <button className=' mx-[10px] text-white px-[10px] hover:bg-gray-400 rounded-[20px] pb-[25px]'><Link to='/Cart'>Cart</Link></button> : Role==='Teacher' ? <div className='m-[20px] text-white hover:bg-gray-400 rounded-[20px] px-[5px] mx-[10px] '><Link to='/TeacherDashboard'>DashBoard</Link></div> :null}
     {Role==='Student' ?<div className='m-[20px] mx-[10px] text-white px-[10px] hover:bg-gray-400 rounded-[20px] px-[5px]'> <Link to='/GenerateMockTests'> Mock Tests</Link></div> 
     : Role==='Teacher'? (<div className='m-[20px] mx-[6px] text-white px-[10px] hover:bg-gray-400 rounded-[20px] '><Link to='/createliveclasses'>Create Live</Link></div>)
     :null

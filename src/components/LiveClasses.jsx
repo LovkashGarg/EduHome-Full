@@ -36,8 +36,8 @@ catch(err){
         <div className=" text-white w-[580px] h-[260px] sm:w-[420px] sm:h-[350px] mx-[20px] border-[3px] rounded-[30px] border-green-500 flex flex-col items-center justify-center  ">
   
          <div className='flex flex-row items-center justify-between gap-[20px] pt-[20px]'>
-          <div className="bg-red-600 text-[25px] text-white w-[200px] rounded-[20px] text-center">{props.classTeacher}</div>
-          <div className="bg-red-600 text-[25px] text-white w-[140px] rounded-[20px] text-center">{props.timepassed}</div>
+          <div className="bg-red-600 text-[20px] text-white w-[200px] rounded-[20px] text-center">{props.classTeacher}</div>
+          <div className="bg-red-600 text-[20px] text-white w-[140px] rounded-[20px] text-center">{props.timepassed}</div>
           </div>
           <div className="thumbnailsection flex justify-center items-center">
             <img
@@ -48,7 +48,7 @@ catch(err){
           </div>
           <div className="teacher text-[25px]">{props.classTitle} </div>
           <div className="Livestudents text-[20px]">Students Watching {livestudents}</div>
-          <button  className='bg-green-600 text-white w-[200px] h-[50px] text-[30px] rounded-[40px] mb-[20px] ' ><Link to={`/Room/${props.classTeacher}/${props.idpassed}`}>Watch Now</Link></button>
+          <button  className='bg-green-600 text-white w-[200px] h-[50px] text-[20px] rounded-[40px] mb-[20px] ' ><Link to={`/Room/${props.classTeacher}/${props.idpassed}`}>Watch Now</Link></button>
         </div>
       </>
     );

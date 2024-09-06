@@ -150,7 +150,7 @@ const Home = () => {
                 speed={50}
                 // style={{  display: "inline-block" }}
                 omitDeletionAnimation={true}
-                className="text-[30px]"
+                className="text-[25px]"
               />
             </div>
           </div>
