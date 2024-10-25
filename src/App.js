@@ -14,6 +14,7 @@ import CourseCreationForm from './components/CourseCreationForm';
 import Course_showing_cpm from './components/Course_showing_cpm';
 import McqQuestion from './components/MockTest/Mock_test_question_component';
 import Mock_test_topic from './components/MockTest/Mock_test_topic';
+import Compiler from './components/Compiler';
 // import PaymentProcessing from './components/PaymentProcessing';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 <Route path='/signup' element={<Signup/>}/>
 <Route path='/login' element={<Login/>}/>
 <Route path='/profile' element={<Profile/>}/>
+<Route path='/compiler' element={<Compiler/>}/>
 <Route path='/Room/:classTeacher/:roomId' element={<Room/>}/>
 <Route path='/createliveclasses' element={<CreateLiveClasses/>}/>
 <Route path='/SearchResults' element={<SearchResults/>}/>

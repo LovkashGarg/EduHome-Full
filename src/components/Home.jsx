@@ -8,7 +8,7 @@ import CTABUTTON from "./Button";
 import tutorvideo from "./tutor.mp4";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
-import axios from "axios";
+// import axios from "axios";
 import { useState } from "react";
 
 const Home = () => {
@@ -86,12 +86,12 @@ const Home = () => {
       </div>
 <Cart/>
       <main className="w-[100vw] ">
-        <div className="grid  h-[70vh]  sm:h-[60vh] grid-col-1 grid-rows-3  lg:grid-cols-2 ">
+        <div className="grid mt-[5%] h-[90vh]  sm:h-[80vh] grid-col-1 grid-rows-3  lg:grid-cols-2 ">
           <div className="left bg-slate-200 h-[40vh] sm:h-[45vh] row-span-2 lg:col-span-1 my-[30px] mx-[10%] flex items-center justify-center flex-col border-[2px]  rounded-full">
-            <div className="bigtagline text-[40px] px-[20px] md:text-[45px] text-red-800 font-mono">
+            <div className="bigtagline text-[30px] px-[20px] md:text-[45px] text-red-800 font-mono">
               Learn with Us
             </div>
-            <div className="Description text-[15px] sm:text-[30px] text-black ">
+            <div className="Description text-[15px] sm:text-[20px] text-black ">
               EduHome is a Edtech Platform which comes with a
               <br /> mission of briging quality Education to Homes.
             </div>
@@ -108,7 +108,9 @@ const Home = () => {
             <img src={Student} alt="" className="mt-[50px] sm:hidden sm:hidden md:block rounded-[50px]  "  />
           </div>
         </div>
-        <LiveClasses className={role === "Teacher" ? "hidden" : "block"} />
+        <LiveClasses 
+        // className={role === "Teacher" ? "hidden" : "block"} 
+        />
         <div className="mt-[100px]  mb-[50px] ">
         <TopCourses sendDataToparent={HandledatafromChild} />
         </div>

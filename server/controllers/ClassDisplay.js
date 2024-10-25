@@ -13,7 +13,8 @@ const ClassDisplay=async(req,res)=>{
    data: allliveclasses
         // message:"All live classes recieved"
     })
-    console.log("Sent");
+    // console.log("Sent");
+    
   } catch (error) {
     console.error("Error fetching classes:", error);
   }
